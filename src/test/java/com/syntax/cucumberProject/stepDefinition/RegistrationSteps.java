@@ -48,7 +48,7 @@ public class RegistrationSteps {
 
 	}
 
-	@When("^I enter \"(.*)\" and \"(.*)\" and \"(.*)\"$")
+	@When("^I enter \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\"$")
 	public void i_enter_and_and(String email, String uName, String pwd) throws Throwable {
 
 		driver.findElement(By.name("email")).sendKeys(email);
